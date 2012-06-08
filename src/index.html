@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>gitIssues</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+</head>
+<body>
+<form action="" class="well" method="post">
+	<fieldset>
+		<legend>Notificar error detectado o solicitar mejora</legend>
+		
+		<label>Titulo:
+		</label>
+		<input type='text' name='title' id='title' class='input-xlarge'
+		placeholder="Titulo del error detectado o mejora">
+		
+		<label>Descripción:
+		</label>	
+		<textarea name="body" rows="5" cols="20" class="input-xlarge"
+			placeholder="Describa el error o mejora"></textarea>
+		<div class="control-group">
+			<label class="control-label">
+				Marque la importancia del error o mejora
+			</label>
+			<div class="controls">
+				<label class="checkbox inline">
+					<input type="checkbox" name="labels[]" value="Critica" />
+					<span class="label label-inverse">Critica</span>
+				</label>
+				<label class="checkbox inline">
+					<input type="checkbox" name="labels[]" value="Alta" />
+					<span class="label label-important">Alta</span>
+				</label>
+				<label class="checkbox inline">
+					<input type="checkbox" name="labels[]" value="Normal" />
+					<span class="label label-warning">Normal</span>
+				</label>
+				<label class="checkbox inline">
+					<input type="checkbox" name="labels[]" value="Baja" />
+					<span class="label">Baja</span>
+				</label>
+				<label class="checkbox inline">
+					<input type="checkbox" name="labels[]" value="Mejora" />
+					<span class="label label-info">Mejora</span>
+				</label>
+			</div>
+		</div>
+		
+		<div class="controls">
+			<button type="submit" class="btn btn-primary btn-large">
+				Reportar Error
+			</button>
+		</div>
+		<br/>
+		<div class="controls">
+			<div id='mensaje'></div>
+		<div class="progress progress-striped active progress-success">
+			<div class="bar" style="width: 100%;"></div>
+		</div>
+		</div>		
+	</fieldset>
+</form>
+<script src=" https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" >
+</script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="bootstrap/js/application.js"></script>
+<script>
+$('document').ready(function(){
+	$('.progress').hide();
+});
+</script>
+</body>
+</html>
