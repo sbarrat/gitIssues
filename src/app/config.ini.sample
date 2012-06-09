@@ -1,0 +1,11 @@
+;Configuracion de la aplicacion
+;Rellenar con los datos de cada aplicacion
+
+;Usuario de GitHub para reportar el error
+user = "" 
+;Password del usuario de  GitHub
+pass = ""
+;Repositorio de GitHub donde reportar el error
+repo = ""
+;Propietario del Repositorio de GitHub
+repoUser = ""
